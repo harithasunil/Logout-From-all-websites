@@ -1,4 +1,5 @@
-      doSites(document.getElementById("sitelist"), [
+        window.onload = function() {
+        doSites(document.getElementById("sitelist"), [
         ["AOL", and(get("http://my.screenname.aol.com/_cqr/logout/mcLogout.psp?sitedomain=startpage.aol.com&authLev=0&lang=en&locale=us"), get("https://api.screenname.aol.com/auth/logout?state=snslogout&r=" + Math.random()))],
         ["Amazon", get("http://www.amazon.com/gp/flex/sign-out.html?action=sign-out")],
         ["Blogger", get("http://www.blogger.com/logout.g")],
@@ -37,3 +38,4 @@
         ["YouTube", post("http://www.youtube.com", {"action_logout": "1"}, true)],
         []
       ])
+        }
