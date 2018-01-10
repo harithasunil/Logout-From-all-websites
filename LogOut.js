@@ -37,5 +37,5 @@
         ["Yahoo!", get("https://login.yahoo.com/config/login?.src=fpctx&logout=1&.direct=1&.done=http://www.yahoo.com/")],
         ["YouTube", post("http://www.youtube.com", {"action_logout": "1"}, true)],
         []
-      ])
+      ]) 
         }
